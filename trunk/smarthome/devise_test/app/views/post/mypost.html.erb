@@ -1,0 +1,8 @@
+this is my post
+<%= session%>              <br/>
+<%= @mypost.class%>              <br/>
+<% if can? :read, @mypost %>
+    can
+<% else %>
+    can not
+<% end %>

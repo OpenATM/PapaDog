@@ -1,0 +1,6 @@
+<%= simple_form_for(@student) do |f| %>
+    <%= f.input :username  %>
+    <%= f.input :password  %>
+    <%= f.input :teacher_id  %>
+    <%= f.submit "sign up", :class => 'btn btn-primary' %>
+<% end %>

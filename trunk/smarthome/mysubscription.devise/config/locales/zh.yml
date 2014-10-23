@@ -1,0 +1,5 @@
+zh:
+   admin:
+     hello: "test new lang"
+   login:
+     hello: "login hello"

@@ -1,0 +1,17 @@
+main page<br/>
+<%=@post%><br/>
+<%= link_to "Read Post", purchase_path, :method => :post %><br/>
+<% if can? :read, @post %>
+  can
+<% else %>
+ can not
+<% end %>
+<br/>
+sign in:<%= user_signed_in? %>.<br>
+<% if user_signed_in? %>
+    current_user:<%= current_user.email %>.<br/>
+    current_session:<%= user_session.size %>.<br/>
+    <strong><%= link_to "sign out", destroy_user_session_path, :method => :delete %></strong>
+<%else%>
+    <strong><%= link_to "sign in", 'users/sign_in'%></strong>
+<% end %>

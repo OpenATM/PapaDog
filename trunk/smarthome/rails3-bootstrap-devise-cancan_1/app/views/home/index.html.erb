@@ -1,0 +1,11 @@
+<h3>Home</h3>
+<% @users.each do |user| %>
+  <p>User: <%=link_to user.name, user %></p>
+    <p>user role:<%= user.has_role? :admin?%></p>            l
+    <%
+     post = Post.new
+     post.save
+     #user.add_role :myadmin3, post
+    %>
+    <p>user role:<%= user.roles%></p>
+<% end %>

@@ -1,0 +1,17 @@
+<%= simple_form_for(@location) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :longitude %>
+    <%= f.input :latitude %>
+    <%= f.input :gmaps %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+@scenic_spots = ScenicSpot.joins('join categories_scenic_spots on scenic_spots.id = categories_scenic_spots.scenic_spot_id').where([ 'categories_scenic_spots.category_id IN (:category_ids)', {category_ids: params[:category_ids]}  ]).uniq

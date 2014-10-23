@@ -1,0 +1,13 @@
+<body>
+<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+    // °Ù¶ÈµØÍ¼API¹¦ÄÜ
+    var map = new BMap.Map("allmap");            // ´´½¨MapÊµÀý
+    var point = new BMap.Point(116.404, 39.915);    // ´´½¨µã×ø±ê
+    map.centerAndZoom(point,15);                     // ³õÊ¼»¯µØÍ¼,ÉèÖÃÖÐÐÄµã×ø±êºÍµØÍ¼¼¶±ð¡£
+    map.enableScrollWheelZoom();                            //ÆôÓÃ¹öÂÖ·Å´óËõÐ¡
+
+</script>

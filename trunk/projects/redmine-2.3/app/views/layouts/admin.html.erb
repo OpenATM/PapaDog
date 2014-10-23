@@ -1,0 +1,11 @@
+admin.html
+<% unless controller_name == 'admin' && action_name == 'index' %>
+  <% content_for :sidebar do %>
+    <h3><%=l(:label_administration)%>admin title</h3>
+    amdin menu:<%= controller_name%>:
+    <%= render :partial => 'admin/menu' %>
+    amdin menu end:
+  <% end %>
+<% end %>
+layout base
+<%= render :file => "layouts/base" %>

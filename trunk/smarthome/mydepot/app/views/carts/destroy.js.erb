@@ -1,0 +1,9 @@
+<% if @cart.total_items == 0 %>
+  $("#cart").hide('blind', {}, 1000);
+  $('#cart').html("<%= escape_javascript(render(@cart)) %>");
+  // trs = $("#cart tr")
+  // for (var i = 0; i < trs.length - 1 ; i++){
+  //     $($("#cart tr").get(i)).remove();
+  // }
+<% end %>
+	

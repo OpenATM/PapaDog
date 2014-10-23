@@ -1,0 +1,159 @@
+
+<FORM id=myform name=myform action=search.asp method=post>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0>
+<TBODY>
+<TR>
+<TD height=146><TABLE class=bbb1 cellSpacing=4 cellPadding=0 width="95%" 
+align=center bgColor=#ffffb0 border=0>
+<TBODY>
+<TR>
+<TD colSpan=4>
+<TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
+<TBODY>
+<TR>
+<TD width="45%">&nbsp;</TD>
+</TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD background=../image/1/xian.gif colSpan=4 height=1></TD></TR>
+<TR>
+<TD class=size12 colSpan=4><FONT color=#000000>商品（求购）信息名称关键字 <INPUT class=input 
+id=price13 maxLength=30 size=30 name=proname> <FONT color=#ff0000>不填代表无限制</FONT> 
+    <label>
+    <input type="submit" name="Submit" value="搜索" />
+    </label>
+</FONT></TD>
+</TR>
+<TR>
+<TD class=size12 colSpan=4><FONT color=#000000>请选择二手类别：
+<SCRIPT src="../js/search.htm"></SCRIPT>
+ <SELECT 
+onchange=changelocation(document.myform.classid.options[document.myform.classid.selectedIndex].value) 
+size=1 name=classid> <OPTION value="">不 限</OPTION>
+   <option value="1">二手电脑</option>
+   <option value="2">二手手机</option>
+   <option value="3">二手衣物</option>
+   <option value="4">二手书</option>
+ </SELECT> </FONT><FONT color=#000000><SELECT size=1 
+name=Nclassid> <OPTION value="" selected>不 限</OPTION></SELECT> </FONT></TD></TR>
+<TR>
+<TD width="13%" class=size12><FONT color=#000000>价格要求</FONT></TD>
+<TD class=size12 width="41%"><FONT color=#000000>从 <INPUT class=input id=price12 
+onkeyup='this.value=this.value.replace(/\D/gi,"")' maxLength=10 size=6 
+name=price1> 元到 <INPUT class=input id=price22 
+onkeyup='this.value=this.value.replace(/\D/gi,"")' maxLength=10 size=6 
+name=price2> 元 <FONT color=#ff0000>不填代表无限制</FONT> </FONT></TD>
+<TD class=size12 width="19%"><FONT color=#000000>按新旧程度</FONT></TD>
+<TD width="27%"><FONT color=#000000><SELECT class=input id=select name=newrate1> 
+<OPTION value=10>10</OPTION> <OPTION value=9>9</OPTION> <OPTION 
+value=8>8</OPTION> <OPTION value=7>7</OPTION> <OPTION value=6>6</OPTION> <OPTION 
+value=5>5</OPTION> <OPTION value=4>4</OPTION> <OPTION value=3>3</OPTION> <OPTION 
+value=2>2</OPTION> <OPTION value=1 selected>1</OPTION></SELECT> <SPAN 
+class=size12>到</SPAN> <SELECT class=input id=select2 name=newrate2> <OPTION 
+value=10 selected>10</OPTION> <OPTION value=9>9</OPTION> <OPTION 
+value=8>8</OPTION> <OPTION value=7>7</OPTION> <OPTION value=6>6</OPTION> <OPTION 
+value=5>5</OPTION> <OPTION value=4>4</OPTION> <OPTION value=3>3</OPTION> <OPTION 
+value=2>2</OPTION> <OPTION value=1>1</OPTION></SELECT> <SPAN 
+class=size12>成新</SPAN></FONT></TD></TR>
+<TR>
+<TD class=size12><font color="#000000">按发布时间</font></TD>
+<TD class=size12><font color="#000000">
+  <select class="input" id="youxiao2" 
+name="youxiao2">
+    <option value="" selected="selected">不 限</option>
+    <option 
+value="1">最近一天</option>
+    <option value="2">最近二天</option>
+    <option 
+value="3">最近三天</option>
+    <option value="7">最近一周</option>
+    <option 
+value="15">最近半个月</option>
+    <option value="30">最近一个月</option>
+    <option 
+value="91">最近三个月</option>
+    <option value="182">最近半年</option>
+    <option 
+value="365">最近一年</option>
+  </select>
+&nbsp;</font></TD>
+<TD class=size12><FONT color=#000000>按是否有原始发票</FONT></TD>
+<TD><FONT color=#000000><SELECT class=input id=fapiao name=fapiao> <OPTION 
+value="" selected>不限</OPTION> <OPTION value=2>没有</OPTION> <OPTION 
+value=1>有</OPTION></SELECT> </FONT></TD></TR>
+</TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE width="95%" border=0>
+<TBODY>
+<TR>
+<TD height=10></TD></TR></TBODY></TABLE>
+<TABLE class=bbb1 cellSpacing=1 cellPadding=5 width="93%" align=center 
+bgColor=#6a9f35 border=0>
+<TBODY>
+<TR class=size12 align=middle bgColor=#009900>
+<TD width="28%" height=23><FONT color=#ffffff>名称</FONT></TD>
+<TD width="13%"><FONT color=#ffffff>数量服</FONT></TD>
+<TD width="9%"><FONT color=#ffffff>新旧程度</FONT></TD>
+<TD width="22%"><FONT color=#ffffff>所属类别</FONT></TD>
+<TD width="8%"><FONT color=#ffffff>价格</FONT></TD>
+<TD width="10%"><font color="#ffffff">卖家</font></TD>
+<TD width="10%"><FONT color=#ffffff>更新日期</FONT></TD></TR>
+<TR class=size12 onMouseOver="this.style.backgroundColor='#E6E6E6';" 
+onmouseout="this.style.backgroundColor='#ffffff';" bgColor=#ffffff>
+<TD><A href="商品详细信息.html?id2=504" target=_blank><FONT 
+color=red>出售：联想笔记本贱卖</FONT></A></TD>
+<TD align=middle>1</TD>
+<TD align=middle>1成新</TD>
+<TD align=middle>二手电脑</TD>
+<TD align=middle><FONT color=red>2200</FONT>元 </TD>
+<TD align=middle>刘训明</TD>
+<TD align=middle>2010-10-15 </TD></TR>
+<TR class=size12 onMouseOver="this.style.backgroundColor='#E6E6E6';" 
+style="BACKGROUND-COLOR: #ffffff" 
+onmouseout="this.style.backgroundColor='#ffffff';" bgColor=#ffffff>
+<TD><font color="red"><a href="商品详细信息.html">大甩卖：二手手机不要错过</a></font></TD>
+<TD align=middle>1</TD>
+<TD align=middle>9成新</TD>
+<TD align=middle>二手手机</TD>
+<TD align=middle><FONT color=red>900</FONT>元 </TD>
+<TD align=middle>唐帅</TD>
+<TD align=middle>2010-10-15 </TD></TR>
+<TR class=size12 onMouseOver="this.style.backgroundColor='#E6E6E6';" 
+onmouseout="this.style.backgroundColor='#ffffff';" bgColor=#ffffff>
+<TD><A href="商品详细信息.html?id2=33" target=_blank><font color="red">出售：《Windows核心技术》</font></A></TD>
+<TD align=middle>1</TD>
+<TD align=middle>10成新</TD>
+<TD align=middle>二手书</TD>
+<TD align=middle><FONT color=red>15</FONT>元 </TD>
+<TD align=middle>到东京喂猪</TD>
+<TD align=middle>2010-10-9 </TD></TR>
+<TR class=size12 onMouseOver="this.style.backgroundColor='#E6E6E6';" 
+onmouseout="this.style.backgroundColor='#ffffff';" bgColor=#ffffff>
+<TD><A href="商品详细信息.html?id2=34" target=_blank><FONT 
+color=red>出售：二手运动服贱卖</FONT></A></TD>
+<TD align=middle>1</TD>
+<TD align=middle>10成新</TD>
+<TD align=middle>二手衣物 </TD>
+<TD align=middle>面议 </TD>
+<TD align=middle>一刀</TD>
+<TD align=middle>2010-10-9 </TD></TR></TBODY></TABLE>
+</FORM>
+<FORM id=form2 name=form2 action=search.asp method=get>
+<TABLE class=bbb1 cellSpacing=5 cellPadding=0 width="95%" align=center 
+bgColor=#ffffb0 border=0>
+<TBODY>
+<TR>
+<TD class=size12 width="52%"><FONT color=#ff6600><STRONG>共59页，每页显示30条信息，本页是第1页 
+</STRONG></FONT></TD>
+<TD onmouseup=click1(this); class=size12 onmousemove=click1(this); 
+onmousedown=click3(this); onmouseout=click2(this); align=right 
+width="13%"><STRONG><FONT color=#ff6600><A 
+href="search.asp?page=0">上一页</A>&nbsp;&nbsp;</FONT></STRONG></TD>
+<TD onmouseup=click1(this); class=size12 onmousemove=click1(this); 
+onmousedown=click3(this); onmouseout=click2(this); width="14%"><STRONG><FONT 
+color=#ff6600>&nbsp;&nbsp;<A 
+href="search.asp?page=2">下一页</A></FONT></STRONG></TD>
+<TD width="21%"><SPAN class=size12><FONT 
+color=#ff6600><STRONG>输入页码</STRONG></FONT></SPAN> <INPUT class=input id=page2 
+maxLength=3 size=2 name=page> <INPUT class=aa1 type=submit value=Go name=page_go>
+  <label>
+  <input type="submit" name="Submit2" value="购买" />
+  </label></TD></TR></TBODY></TABLE></FORM>

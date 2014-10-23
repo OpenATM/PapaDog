@@ -1,0 +1,9 @@
+$("#notice").hide();
+if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
+
+//$('#cart').html("hello");
+//$('#cart').html("\n<div class=\"cart_title\">Your Progmatic Cart<\/div>\n<table>\n      <tr id=\"current_item\"><\/tr>\n       <td>1&times;<\/td>\n       <td>123<\/td>\n       <td class=\"item_price\">$102.23<\/td>\n    <\/tr>\n  <tr class = \"total_line\">\n    <td colspan=\"2\">Total<\/td>\n    <td class=\"total_cell\">$102.23<\/td>\n  <\/tr>\n<\/table>\n\n<div>\n    <form action=\"/orders/new\" class=\"button_to\" method=\"get\"><div><input type=\"submit\" value=\"Checkout\" /><\/div><\/form>\n    <form action=\"/carts/64\" class=\"button_to\" data-remote=\"true\" method=\"post\"><div><input name=\"_method\" type=\"hidden\" value=\"delete\" /><input data-confirm=\"Are you sure?\" type=\"submit\" value=\"Empty Cart\" /><input name=\"authenticity_token\" type=\"hidden\" value=\"kvRmV9AjsMfz54dTRaMnqcAeyd/QI50xA7VHBpAYUkw=\" /><\/div><\/form>\n<\/div>\n<a href=\"/\">Back<\/a>\n\n\n")
+$('#cart').html("<%=  escape_javascript(render(@cart))%>");
+$('#current_item').css({'background-color':'#88ff88'}).animate({'background-color':'#114411'}, 1000)
+
+//$('#current_item').css("")

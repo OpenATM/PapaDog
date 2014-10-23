@@ -1,0 +1,13 @@
+<h1>Students#new</h1>
+<strong><%= flash[:mynotice].class %></strong>
+<p><%= @student.inspect%></p>
+<% if can? :update, @student %>
+    can
+<% else %>
+    cannot
+<% end %>
+
+<%= simple_form_for :student do |f|%>
+    <%= f.input :username %>
+    <%= f.input :password %>
+<% end %>

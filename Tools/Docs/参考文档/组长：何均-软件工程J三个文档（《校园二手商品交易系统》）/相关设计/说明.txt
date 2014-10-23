@@ -1,0 +1,4 @@
+   其中SecondHandShop为项目建的MyEclipse下的工程，采用struts 2+spring
++hibernate+JQuery编码，去掉了其中的jar包，但是由于时间的原因，只担了一
+框架。
+    SecondHandShop是在需求阶段为系统作的静态页面原型。

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain.model">
+	<class name="User">
+		<id name="id" 
+		 type="integer"
+		 column="id"
+		>
+			<generator class="native" />
+		</id>
+		<property name="userName" not-null="true"/>
+		<property name="password" not-null="true"/>
+		<property name="realName" />
+		<property name="tel" not-null="true" type="string"/>
+		<property name="studentId" />
+		<property name="room" />
+	    <property name="description"/>	
+	    <property name="school" />	
+	    
+	    <set name="product_secs" cascade="delete" inverse="true">
+	    <key column="user_id"/>
+        <one-to-many class="Product_sec"/>
+	    </set>
+	</class>
+
+</hibernate-mapping>

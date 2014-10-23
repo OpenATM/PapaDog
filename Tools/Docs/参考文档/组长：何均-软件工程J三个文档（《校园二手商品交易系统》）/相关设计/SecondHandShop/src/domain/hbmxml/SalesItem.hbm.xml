@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain.model">
+
+<!-- 主键关联 -->
+	<class name="SalesItem" table="sales_item">
+		<id name="id">
+			<generator class="foreign">
+			<param name="property">product_sec</param>
+			</generator>
+		</id>
+		<property name="count" type="integer"/>
+		<property name="price" type="float"/>
+		<property name="orderId" />	
+		
+		<!--constrained="true"表示此表的主键也是外键，用来参product_sec表的主键  -->
+		<one-to-one name="product_sec" class="Product_sec" constrained="true"></one-to-one>
+	</class>
+
+</hibernate-mapping>

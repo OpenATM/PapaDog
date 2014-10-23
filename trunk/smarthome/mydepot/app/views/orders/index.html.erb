@@ -1,0 +1,26 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Item count</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Pay type</th>
+    <th>Amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @orders.each do |order| %>
+      <tr><% order.line_items.count %>  </tr>
+      <tr><% order.name %>  </tr>
+      <tr><% order.address %>  </tr>
+      <tr><% order.email %>  </tr>
+      <tr><% order.pay_type %>  </tr>
+      <tr><% total_cost(order.line_items) %>  </tr>
+      <td><% link_to 'Show', order %></td>
+      <td><% link_to 'Edit', edit_order_path(order) %></td>
+      <td><% link_to 'Destroy', order, :confirm => 'Are you sure?', :method => :delete %></td>
+  <% end %>
+</table>
