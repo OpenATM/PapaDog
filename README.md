@@ -1,4 +1,4 @@
 PapaDog
 =======
 
-for honor, for our people.
+[dummy]for honor, for our people.
